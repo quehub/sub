@@ -499,7 +499,7 @@ function Tool() {
 
     // done
     const done = (value = {}) => {
-        if (env.app.quanx) env.cron ? "" : $done(value)
+        if (env.app.quanx) env.cron ? $done() : $done(value)
         if (env.app.surge) env.cron ? $done() : $done(value)
     }
 
