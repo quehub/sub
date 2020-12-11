@@ -107,7 +107,7 @@ const config = {
 let $tool = Tool()
 $tool.log.level('warn')
 if ($tool.env.cron) {
-    AppMonitor()
+    await AppMonitor()
 }
 $tool.done()
 async function AppMonitor() {
