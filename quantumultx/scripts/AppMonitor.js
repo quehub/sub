@@ -107,9 +107,9 @@ const config = {
 let $tool = Tool()
 $tool.log.level('warn')
 if ($tool.env.cron) {
-    await AppMonitor()
+    AppMonitor()
 }
-$tool.done()
+// $tool.done()
 async function AppMonitor() {
     let requests = []
     try {
@@ -155,6 +155,7 @@ async function AppMonitor() {
     } catch (error) {
         $tool.log.error(error)
         $tool.notify(config.name, requests, error)
+        $tool.done()
     }
 }
 
@@ -166,6 +167,7 @@ async function getInfo(requests) {
         $tool.log.error(error)
         $tool.log.error(responses)
         $tool.notify(config.name,'request error', error)
+        $tool.done()
     }
 }
 
@@ -214,6 +216,7 @@ async function parseData(responses) {
     } catch (error) {
         $tool.log.error(error)
         $tool.notify(config.name,'', error)
+        $tool.done()
     }
 }
 
@@ -292,6 +295,8 @@ async function formatNotify(results) {
         }
 
     }
+
+    $tool.done()
 }
 
 function mapApps() {
