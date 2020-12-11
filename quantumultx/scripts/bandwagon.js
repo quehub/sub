@@ -49,7 +49,7 @@ if ($tool.ishttp) {
     $tool.done();
 } else {
     check_flow();
-    $tool.done();
+    // $tool.done();
 }
 
 // get login value
@@ -169,6 +169,7 @@ function parse_flow(data) {
     $tool.notify(subConfig.name, subTitle, message);
     $tool.log.debug(subTitle);
     $tool.log.debug(message);
+    $tool.done()
     // push(subConfig.name, subTitle+"\n"+ message)
 }
 
@@ -194,10 +195,12 @@ function check_flow() {
         } else {
             $tool.log.error(response)
             $tool.notify(subConfig.name, "接口返回出错", response);
+            $tool.done()
         }
     }).catch((error) => {
         $tool.log.error(error)
         $tool.notify(subConfig.name, "接口查询错误", error);
+        $tool.done()
     })
 }
 
