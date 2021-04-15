@@ -1,0 +1,16 @@
+{
+  "name": "Task",
+  "description": "Tasks",
+  "task": [
+    {
+      "config": "0 3 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, tag=京东, enabled=true",
+      "addons": "https://raw.githubusercontent.com/quehub/sub/master/quantumultx/tasks/jd.conf"
+    },
+    {
+      "config": "2 8 * * * https://raw.githubusercontent.com/quehub/sub/master/quantumultx/scripts/AppMonitor.js, tag=app监控, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/appstore.png, enabled=true"
+    },
+    {
+      "config": "0 8 * * * https://raw.githubusercontent.com/quehub/sub/master/quantumultx/scripts/bandwagon.js, tag=搬瓦工, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/airport.png, enabled=true"
+    }
+  ]
+}
