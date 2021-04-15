@@ -3,7 +3,7 @@
   "description": "Tasks",
   "task": [
     {
-      "config": "0 3 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, tag=京东, enabled=true",
+      "config": "3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, tag=京东, enabled=true",
       "addons": "https://raw.githubusercontent.com/quehub/sub/master/quantumultx/tasks/jd.conf, tag=jd_login, enabled=true, update-interval=-1"
     },
     {
