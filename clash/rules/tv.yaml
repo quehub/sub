@@ -1,0 +1,16 @@
+payload:  
+  # > Netflix
+  - PROCESS-NAME,com.netflix.mediaclient
+  - PROCESS-NAME,com.android.vending
+  - PROCESS-NAME,com.netflix.ninja
+  - PROCESS-NAME,com.hulu.livingroomplus
+  - PROCESS-NAME,com.sling
+  - PROCESS-NAME,com.bydeluxe.d3.android.program.starz
+  - PROCESS-NAME,com.ted.android.tv
+  - PROCESS-NAME,com.tubitv
+  - PROCESS-NAME,com.google.android.youtube.tvmusic
+  - PROCESS-NAME,com.google.android.youtube.tv
+  - PROCESS-NAME,com.google.android.videos
+  - PROCESS-NAME,com.google.android.play.games
+  - PROCESS-NAME,tv.pluto.android
+  - PROCESS-NAME,com.amazon.amazonvideo.livingroom
