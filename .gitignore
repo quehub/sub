@@ -129,3 +129,7 @@ dmypy.json
 .pyre/
 
 .DS_Store
+node_modules
+.idea/
+package-lock.json
+package.json
