@@ -239,7 +239,7 @@ async function formatNotify(results) {
              }
              return b.level - a.level
          })
-        $tool.log.info(messages)
+        $tool.log.info(messages.map(m => m.msg).join('\n'))
         if (config.notification.priceLimit <= priceNumber || config.notification.upgradeLimit <= upgradeNumber) {
             let subtitle = `价格变动: ${priceNumber}  版本升级: ${upgradeNumber}`
             $tool.notify(config.name, subtitle, messages.map(m => m.msg).join('\n'))
