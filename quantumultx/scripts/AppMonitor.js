@@ -11,26 +11,6 @@ const config = {
     name: 'app监控',
     apps:{
         us:[{
-            name: 'Procreate',
-            id: 425073498,
-            enabled: true
-        },{
-            name: 'Notablity',
-            id: 360593530,
-            enabled: true
-        },{
-            name: 'Loon',
-            id: 1373567447,
-            enabled: true
-        },{
-            name: 'Thor',
-            id: 1210562295,
-            enabled: true
-        },{
-            name: '网易邮箱Pro',
-            id: 909587083,
-            enabled: true
-        },{
             name: 'AdGuardPro',
             id: 1126386264,
             enabled: true
@@ -63,36 +43,16 @@ const config = {
             id: 956033107,
             enabled: true
         },{
-            name: '熊猫吃短信',
-            id: 1319191852,
-            enabled: true
-        },{
             name: '小历',
             id: 1031088612,
-            enabled: true
-        },{
-            name: '菜谱大全Pro',
-            id: 1183632694,
             enabled: true
         },{
             name: '黑白短信',
             id: 1444392450,
             enabled: true
         },{
-            name: 'HyperApp',
-            id: 1179750280,
-            enabled: true
-        },{
-            name: 'Tweebot',
-            id: 1018355599,
-            enabled: true
-        },{
             name: 'PharosPro',
             id: 1456610173,
-            enabled: true
-        },{
-            name: 'ServerCat',
-            id: 1501532023,
             enabled: true
         }],
         // cn: [1373567447,1210562295,909587083,1126386264,1085978097,539397400,904237743,1444671526,917437289,1443988620,956033107,1319191852,1031088612,1183632694,1444392450,1179750280,1018355599,1456610173]
@@ -105,7 +65,7 @@ const config = {
 }
 // console.time("run time")
 let $tool = Tool()
-$tool.log.level('warn')
+$tool.log.level('info')
 if ($tool.env.cron) {
     AppMonitor()
 }
